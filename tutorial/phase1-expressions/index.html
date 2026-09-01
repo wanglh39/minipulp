@@ -750,7 +750,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        核心类
+        目录
       
     </span>
   </a>
@@ -761,7 +761,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        运算符重载
+        设计哲学
       
     </span>
   </a>
@@ -772,7 +772,445 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
+        类层次结构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpElement — 运算符协议
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpaffineexpression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpAffineExpression — 仿射表达式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LpAffineExpression — 仿射表达式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        内部表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么用字典而非表达式树？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_new" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _new 工厂方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpvariable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpVariable — 决策变量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LpVariable — 决策变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        构造
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        属性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变量类别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运算符重载详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="运算符重载详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标量乘法：3 * x
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        加法：x + y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        减法：x - y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向减法：5 - x
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        除法：x / 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        负号：-x
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        乘法陷阱：x * y 是非法的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        比较运算符：x + y &lt;= 10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运算符总览
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        闭包性证明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哈希与相等性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="哈希与相等性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解决方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpsum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lpSum — 高效求和
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="lpSum — 高效求和">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题：sum() 的性能瓶颈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpsum_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lpSum 优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        批量变量创建
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="批量变量创建">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lpvariabledicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpVariable.dicts — 一维变量字典
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpvariablematrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpVariable.matrix — 二维变量矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        命名规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完整示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="完整示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生产计划
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dicts-lpsum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运输问题（使用 dicts + lpSum）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         测试
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        总结
       
     </span>
   </a>
@@ -1119,7 +1557,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        核心类
+        目录
       
     </span>
   </a>
@@ -1130,7 +1568,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        运算符重载
+        设计哲学
       
     </span>
   </a>
@@ -1141,7 +1579,445 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
+        类层次结构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpElement — 运算符协议
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpaffineexpression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpAffineExpression — 仿射表达式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LpAffineExpression — 仿射表达式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        内部表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么用字典而非表达式树？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_new" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _new 工厂方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpvariable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpVariable — 决策变量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LpVariable — 决策变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        构造
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        属性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变量类别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运算符重载详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="运算符重载详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        标量乘法：3 * x
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        加法：x + y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        减法：x - y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反向减法：5 - x
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        除法：x / 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        负号：-x
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        乘法陷阱：x * y 是非法的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-y-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        比较运算符：x + y &lt;= 10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运算符总览
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        闭包性证明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        哈希与相等性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="哈希与相等性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解决方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lpsum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lpSum — 高效求和
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="lpSum — 高效求和">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题：sum() 的性能瓶颈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpsum_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        lpSum 优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂度对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        批量变量创建
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="批量变量创建">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lpvariabledicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpVariable.dicts — 一维变量字典
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpvariablematrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LpVariable.matrix — 二维变量矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        命名规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完整示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="完整示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生产计划
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dicts-lpsum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运输问题（使用 dicts + lpSum）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         测试
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        总结
       
     </span>
   </a>
@@ -1171,22 +2047,602 @@
 <h1 id="phase-1">Phase 1 — 表达式系统<a class="headerlink" href="#phase-1" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>运算符重载如何把 <code>3*x + 2*y</code> 变成 <code>LpAffineExpression({x: 3, y: 2})</code>。</p>
-</blockquote>
 <p>本篇对应 <code>src/minipulp/elements.py</code>，是整个库的代数核心。</p>
-<h2 id="_1">核心类<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>LpElement ──&gt; LpAffineExpression ──&gt; LpVariable
-</span></code></pre></div>
+</blockquote>
+<hr />
+<h2 id="_1">目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>LpElement</code>：基类，定义运算符协议</li>
-<li><code>LpAffineExpression</code>：<code>{var: coef}</code> 字典 + 常数项，实现所有运算符</li>
-<li><code>LpVariable</code>：继承表达式，是单变量表达式 <code>{self: 1}</code></li>
+<li><a href="#设计哲学">设计哲学</a></li>
+<li><a href="#类层次结构">类层次结构</a></li>
+<li><a href="#lpelement--运算符协议">LpElement — 运算符协议</a></li>
+<li><a href="#lpaffineexpression--仿射表达式">LpAffineExpression — 仿射表达式</a></li>
+<li><a href="#lpvariable--决策变量">LpVariable — 决策变量</a></li>
+<li><a href="#运算符重载详解">运算符重载详解</a></li>
+<li><a href="#闭包性证明">闭包性证明</a></li>
+<li><a href="#哈希与相等性">哈希与相等性</a></li>
+<li><a href="#lpsum--高效求和">lpSum — 高效求和</a></li>
+<li><a href="#批量变量创建">批量变量创建</a></li>
+<li><a href="#完整示例">完整示例</a></li>
 </ul>
-<h2 id="_2">运算符重载<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>详见 <a href="../../principles/operator-overloading/">运算符重载机制</a>。</p>
-<h2 id="_3">测试<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </span>tests/test_elements.py<span class="w"> </span>-v
+<hr />
+<h2 id="_2">设计哲学<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>PuLP 最具辨识度的特征是：<strong>建模代码几乎和数学公式一模一样</strong>。</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 数学公式：max 3x + 2y  s.t. 2x + y &lt;= 100</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># Python 代码：</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">prob</span> <span class="o">+=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">y</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">prob</span> <span class="o">+=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">100</span>
+</span></code></pre></div>
+<p>这不是字符串解析——<code>3 * x + 2 * y</code> 是真正的 Python 表达式，
+通过<strong>运算符重载</strong>构造出 <code>LpAffineExpression({x: 3, y: 2})</code> 对象。</p>
+<p>核心思想：<strong>代数表达式即代码</strong>。变量是对象，运算是方法调用，结果是表达式对象。</p>
+<hr />
+<h2 id="_3">类层次结构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>LpElement                    # 基类：定义运算符协议
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  └── LpAffineExpression     # 仿射表达式：{var: coef} 字典 + 常数项
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        └── LpVariable       # 决策变量：单变量表达式 {self: 1}
+</span></code></pre></div>
+<p><strong>继承关系的设计意图</strong>：</p>
+<ul>
+<li><code>LpElement</code> 定义运算符协议（<code>__add__</code>, <code>__mul__</code>, <code>__le__</code> 等）</li>
+<li><code>LpAffineExpression</code> 实现所有代数运算（加法、数乘、比较）</li>
+<li><code>LpVariable</code> 继承 <code>LpAffineExpression</code>，自动获得全部代数能力</li>
+</ul>
+<p>变量"是一个"单变量表达式（<code>terms = {self: 1}, const = 0</code>）。
+这一数学事实让运算符重载只需在 <code>LpAffineExpression</code> 写一次。</p>
+<hr />
+<h2 id="lpelement">LpElement — 运算符协议<a class="headerlink" href="#lpelement" title="Permanent link">&para;</a></h2>
+<p><code>LpElement</code> 是所有可参与代数运算对象的基类：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">LpElement</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">""</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="k">else</span> <span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__radd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__rsub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__rmul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__truediv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__neg__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__le__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="kn">from</span><span class="w"> </span><span class="nn">.constraints</span><span class="w"> </span><span class="kn">import</span> <span class="n">LpConstraint</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="k">return</span> <span class="n">LpConstraint</span><span class="p">(</span><span class="bp">self</span> <span class="o">-</span> <span class="n">other</span><span class="p">,</span> <span class="n">LpConstraintSense</span><span class="o">.</span><span class="n">LE</span><span class="p">)</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__ge__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="kn">from</span><span class="w"> </span><span class="nn">.constraints</span><span class="w"> </span><span class="kn">import</span> <span class="n">LpConstraint</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        <span class="k">return</span> <span class="n">LpConstraint</span><span class="p">(</span><span class="bp">self</span> <span class="o">-</span> <span class="n">other</span><span class="p">,</span> <span class="n">LpConstraintSense</span><span class="o">.</span><span class="n">GE</span><span class="p">)</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>        <span class="kn">from</span><span class="w"> </span><span class="nn">.constraints</span><span class="w"> </span><span class="kn">import</span> <span class="n">LpConstraint</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>        <span class="k">return</span> <span class="n">LpConstraint</span><span class="p">(</span><span class="bp">self</span> <span class="o">-</span> <span class="n">other</span><span class="p">,</span> <span class="n">LpConstraintSense</span><span class="o">.</span><span class="n">EQ</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>比较运算符</strong>（<code>__le__</code>, <code>__ge__</code>, <code>__eq__</code>）在基类实现，
+因为它们的逻辑对所有子类相同：构造 <code>LpConstraint</code> 对象。</p>
+<p><strong>延迟导入</strong>：<code>from .constraints import LpConstraint</code> 在方法内部导入，
+避免 <code>elements.py</code> 和 <code>constraints.py</code> 之间的循环导入。</p>
+<hr />
+<h2 id="lpaffineexpression">LpAffineExpression — 仿射表达式<a class="headerlink" href="#lpaffineexpression" title="Permanent link">&para;</a></h2>
+<h3 id="_4">内部表示<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">LpAffineExpression</span><span class="p">(</span><span class="n">LpElement</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">terms</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">const</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">):</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="k">if</span> <span class="n">terms</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">terms</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">terms</span> <span class="o">=</span> <span class="p">{</span><span class="n">var</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">coef</span><span class="p">)</span> <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coef</span> <span class="ow">in</span> <span class="n">terms</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">coef</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">}</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">const</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">const</span><span class="p">)</span>
+</span></code></pre></div>
+<p>仿射表达式 <span class="arithmatex">\(\sum_i c_i x_i + c_0\)</span> 用两个属性表示：</p>
+<ul>
+<li><code>terms: dict[LpVariable, float]</code> — 变量到系数的映射</li>
+<li><code>const: float</code> — 常数项</li>
+</ul>
+<p><strong>规范化</strong>：构造时剔除零系数项（<code>if coef != 0</code>），保持表示唯一性。</p>
+<h3 id="_5">为什么用字典而非表达式树？<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>传统计算机代数系统用<strong>表达式树</strong>表示表达式：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>    +              树结构需要递归遍历，
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>   / \             每次运算创建新节点，
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  *   *            求值、化简都很复杂。
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a> / \ / \
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>3  x 2  y
+</span></code></pre></div>
+<p>PuLP 用<strong>扁平字典</strong>表示：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>{x: 3, y: 2}  ←  3*x + 2*y
+</span></code></pre></div>
+<p>这之所以可行，是因为<strong>仿射表达式在加法和数乘下封闭</strong>：</p>
+<ul>
+<li>两个仿射表达式相加 → 仍是仿射表达式（字典系数相加）</li>
+<li>仿射表达式乘以常数 → 仍是仿射表达式（系数同乘）</li>
+</ul>
+<p>无需树结构，一个字典就够了。这是 PuLP 极简代码的数学根因。</p>
+<h3 id="_new"><code>_new</code> 工厂方法<a class="headerlink" href="#_new" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">_new</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">terms</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">const</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"LpAffineExpression"</span><span class="p">:</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">return</span> <span class="n">LpAffineExpression</span><span class="p">(</span><span class="n">terms</span><span class="p">,</span> <span class="n">const</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>LpVariable</code> 覆盖此方法，使运算结果降级为普通表达式：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># LpVariable._new</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">_new</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">terms</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="k">return</span> <span class="n">LpAffineExpression</span><span class="p">(</span><span class="n">terms</span><span class="p">,</span> <span class="n">const</span><span class="p">)</span>  <span class="c1"># 不再是 LpVariable</span>
+</span></code></pre></div>
+<p><strong>为什么？</strong> <code>x + y</code> 的结果是 <code>LpAffineExpression({x:1, y:1})</code>，
+不是 <code>LpVariable</code>——它有两个变量，不是单变量表达式。</p>
+<hr />
+<h2 id="lpvariable">LpVariable — 决策变量<a class="headerlink" href="#lpvariable" title="Permanent link">&para;</a></h2>
+<h3 id="_6">构造<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">LpVariable</span><span class="p">(</span><span class="n">LpAffineExpression</span><span class="p">):</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">lowBound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">upBound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpCat</span><span class="o">.</span><span class="n">CONTINUOUS</span><span class="p">):</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">lowBound</span> <span class="o">=</span> <span class="n">lowBound</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">upBound</span> <span class="o">=</span> <span class="n">upBound</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">cat</span> <span class="o">=</span> <span class="n">cat</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">varValue</span> <span class="o">=</span> <span class="kc">None</span>        <span class="c1"># 求解后回填</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">terms</span> <span class="o">=</span> <span class="p">{</span><span class="bp">self</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">}</span>    <span class="c1"># 单变量表达式：1 * x</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">const</span> <span class="o">=</span> <span class="mf">0.0</span>
+</span></code></pre></div>
+<p>变量 <code>x</code> 就是仿射表达式 <code>1 * x + 0</code>，即 <code>terms = {x: 1}, const = 0</code>。</p>
+<h3 id="_7">属性<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>变量名，同时作为哈希依据</td>
+</tr>
+<tr>
+<td><code>lowBound</code></td>
+<td><code>float \| None</code></td>
+<td>下界，None 表示无下界</td>
+</tr>
+<tr>
+<td><code>upBound</code></td>
+<td><code>float \| None</code></td>
+<td>上界，None 表示无上界</td>
+</tr>
+<tr>
+<td><code>cat</code></td>
+<td><code>LpCat</code></td>
+<td>变量类别（连续/整数/二元）</td>
+</tr>
+<tr>
+<td><code>varValue</code></td>
+<td><code>float \| None</code></td>
+<td>求解后回填的解值，求解前为 None</td>
+</tr>
+<tr>
+<td><code>terms</code></td>
+<td><code>dict</code></td>
+<td><code>{self: 1.0}</code> — 单变量表达式</td>
+</tr>
+<tr>
+<td><code>const</code></td>
+<td><code>float</code></td>
+<td><code>0.0</code> — 无常数项</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">变量类别<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">x</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>                          <span class="c1"># 连续变量</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">z</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="p">(</span><span class="s2">"z"</span><span class="p">,</span> <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">upBound</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">mp</span><span class="o">.</span><span class="n">LpInteger</span><span class="p">)</span>  <span class="c1"># 整数变量</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="p">(</span><span class="s2">"b"</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">mp</span><span class="o">.</span><span class="n">LpBinary</span><span class="p">)</span>                     <span class="c1"># 二元变量 (0 或 1)</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>含义</th>
+<th>求解器支持</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LpContinuous</code></td>
+<td>连续变量，取值范围 [lb, ub]</td>
+<td>SimplexCore, SimplexCpp, CBC</td>
+</tr>
+<tr>
+<td><code>LpInteger</code></td>
+<td>整数变量，取值范围 [lb, ub] ∩ ℤ</td>
+<td>CBC</td>
+</tr>
+<tr>
+<td><code>LpBinary</code></td>
+<td 0_="0," 1="1">二元变量，取值</td>
+<td>CBC</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_9">运算符重载详解<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="3-x">标量乘法：<code>3 * x</code><a class="headerlink" href="#3-x" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Python 先尝试 int.__mul__(3, x) → NotImplemented</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># 然后调用 x.__rmul__(3)</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">def</span><span class="w"> </span><span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="k">if</span> <span class="n">_is_number</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new</span><span class="p">(</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>            <span class="p">{</span><span class="n">var</span><span class="p">:</span> <span class="n">coef</span> <span class="o">*</span> <span class="n">other</span> <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coef</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="o">.</span><span class="n">items</span><span class="p">()},</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">const</span> <span class="o">*</span> <span class="n">other</span><span class="p">,</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        <span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>3 * x  →  x.__rmul__(3)  →  LpAffineExpression({x: 3.0})
+</span></code></pre></div>
+<h3 id="x-y">加法：<code>x + y</code><a class="headerlink" href="#x-y" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="k">if</span> <span class="n">_is_number</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">const</span> <span class="o">+</span> <span class="n">other</span><span class="p">)</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">LpAffineExpression</span><span class="p">):</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        <span class="n">merged</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="p">)</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>        <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coef</span> <span class="ow">in</span> <span class="n">other</span><span class="o">.</span><span class="n">terms</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>            <span class="n">new_coef</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span> <span class="o">+</span> <span class="n">coef</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>            <span class="k">if</span> <span class="n">new_coef</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>                <span class="n">merged</span><span class="p">[</span><span class="n">var</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_coef</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>            <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>                <span class="n">merged</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>  <span class="c1"># 系数为 0 则删除</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new</span><span class="p">(</span><span class="n">merged</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">const</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">const</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>x + y  →  x.__add__(y)  →  LpAffineExpression({x: 1, y: 1})
+</span></code></pre></div>
+<p><strong>字典合并</strong>：遍历 <code>other.terms</code>，系数相加。若结果为 0 则删除该项（规范化）。</p>
+<h3 id="x-y_1">减法：<code>x - y</code><a class="headerlink" href="#x-y_1" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="k">if</span> <span class="n">_is_number</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">const</span> <span class="o">-</span> <span class="n">other</span><span class="p">)</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">LpAffineExpression</span><span class="p">):</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>        <span class="n">merged</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="p">)</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>        <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coef</span> <span class="ow">in</span> <span class="n">other</span><span class="o">.</span><span class="n">terms</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>            <span class="n">new_coef</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span> <span class="o">-</span> <span class="n">coef</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>            <span class="k">if</span> <span class="n">new_coef</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>                <span class="n">merged</span><span class="p">[</span><span class="n">var</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_coef</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>            <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>                <span class="n">merged</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new</span><span class="p">(</span><span class="n">merged</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">const</span> <span class="o">-</span> <span class="n">other</span><span class="o">.</span><span class="n">const</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="5-x">反向减法：<code>5 - x</code><a class="headerlink" href="#5-x" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__rsub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="k">if</span> <span class="n">_is_number</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new</span><span class="p">(</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>            <span class="p">{</span><span class="n">var</span><span class="p">:</span> <span class="o">-</span><span class="n">coef</span> <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coef</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="o">.</span><span class="n">items</span><span class="p">()},</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>            <span class="n">other</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">const</span><span class="p">,</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>        <span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>5 - x  →  x.__rsub__(5)  →  LpAffineExpression({x: -1}, const=5)
+</span></code></pre></div>
+<h3 id="x-3">除法：<code>x / 3</code><a class="headerlink" href="#x-3" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__truediv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="k">if</span> <span class="n">_is_number</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>        <span class="k">if</span> <span class="n">other</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>            <span class="k">raise</span> <span class="ne">ZeroDivisionError</span><span class="p">(</span><span class="s2">"表达式除以零"</span><span class="p">)</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__mul__</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">other</span><span class="p">)</span>
+</span></code></pre></div>
+<p>除以常数等价于乘以倒数。</p>
+<h3 id="-x">负号：<code>-x</code><a class="headerlink" href="#-x" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__neg__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new</span><span class="p">(</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>        <span class="p">{</span><span class="n">var</span><span class="p">:</span> <span class="o">-</span><span class="n">coef</span> <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coef</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="o">.</span><span class="n">items</span><span class="p">()},</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>        <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">const</span><span class="p">,</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    <span class="p">)</span>
+</span></code></pre></div>
+<h3 id="x-y_2">乘法陷阱：<code>x * y</code> 是非法的<a class="headerlink" href="#x-y_2" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="o">...</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">LpAffineExpression</span><span class="p">):</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">terms</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">other</span><span class="o">.</span><span class="n">terms</span><span class="p">:</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>            <span class="c1"># 其中一个是纯常数</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>            <span class="o">...</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>            <span class="s2">"不能将两个含变量的表达式相乘（非线性），"</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>            <span class="s2">"线性规划只允许仿射表达式"</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>        <span class="p">)</span>
+</span></code></pre></div>
+<p><strong>线性规划只允许仿射表达式</strong>。<code>x * y</code> 是二次项，超出 LP 范畴。
+尝试相乘会抛出 <code>TypeError</code>。</p>
+<h3 id="x-y-10">比较运算符：<code>x + y &lt;= 10</code><a class="headerlink" href="#x-y-10" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># LpElement.__le__</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="k">def</span><span class="w"> </span><span class="fm">__le__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="k">return</span> <span class="n">LpConstraint</span><span class="p">(</span><span class="bp">self</span> <span class="o">-</span> <span class="n">other</span><span class="p">,</span> <span class="n">LpConstraintSense</span><span class="o">.</span><span class="n">LE</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>x + y &lt;= 10
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>  → (x + y).__le__(10)
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  → LpConstraint((x+y) - 10, LE)
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>  → LpConstraint(lhs={x:1, y:1, const:-10}, sense=LE)
+</span></code></pre></div>
+<p>约束被归一化为 <code>lhs &lt;= 0</code> 形式（右端项移到左边）。</p>
+<h3 id="_10">运算符总览<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>Python 调用链</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>3 * x</code></td>
+<td><code>int.__mul__</code> 失败 → <code>x.__rmul__(3)</code></td>
+<td><code>AffExpr({x:3})</code></td>
+</tr>
+<tr>
+<td><code>x + y</code></td>
+<td><code>x.__add__(y)</code></td>
+<td><code>AffExpr({x:1, y:1})</code></td>
+</tr>
+<tr>
+<td><code>x + 5</code></td>
+<td><code>x.__add__(5)</code></td>
+<td><code>AffExpr({x:1}, c=5)</code></td>
+</tr>
+<tr>
+<td><code>5 - x</code></td>
+<td><code>x.__rsub__(5)</code></td>
+<td><code>AffExpr({x:-1}, c=5)</code></td>
+</tr>
+<tr>
+<td><code>x / 2</code></td>
+<td><code>x.__truediv__(2)</code></td>
+<td><code>AffExpr({x:0.5})</code></td>
+</tr>
+<tr>
+<td><code>-x</code></td>
+<td><code>x.__neg__()</code></td>
+<td><code>AffExpr({x:-1})</code></td>
+</tr>
+<tr>
+<td><code>3*x + 2*y</code></td>
+<td>两次 mul + 一次 add</td>
+<td><code>AffExpr({x:3, y:2})</code></td>
+</tr>
+<tr>
+<td><code>x &lt;= 5</code></td>
+<td><code>x.__le__(5)</code></td>
+<td><code>LpConstraint(x-5, LE)</code></td>
+</tr>
+<tr>
+<td><code>x == y</code></td>
+<td><code>x.__eq__(y)</code></td>
+<td><code>LpConstraint(x-y, EQ)</code></td>
+</tr>
+<tr>
+<td><code>x * y</code></td>
+<td><code>x.__mul__(y)</code></td>
+<td><strong>TypeError</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_11">闭包性证明<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p><strong>定理</strong>：仿射表达式在加法、减法、数乘下封闭。</p>
+<p><strong>证明</strong>：</p>
+<p>设 <span class="arithmatex">\(f = \sum_i a_i x_i + a_0\)</span>，<span class="arithmatex">\(g = \sum_j b_j x_j + b_0\)</span>。</p>
+<ol>
+<li><strong>加法</strong>：<span class="arithmatex">\(f + g = \sum_i (a_i + b_i) x_i + (a_0 + b_0)\)</span> — 仍是仿射表达式 ✓</li>
+<li><strong>减法</strong>：<span class="arithmatex">\(f - g = \sum_i (a_i - b_i) x_i + (a_0 - b_0)\)</span> — 仍是仿射表达式 ✓</li>
+<li><strong>数乘</strong>：<span class="arithmatex">\(c \cdot f = \sum_i (c \cdot a_i) x_i + (c \cdot a_0)\)</span> — 仍是仿射表达式 ✓</li>
+</ol>
+<p>因此，任意变量的线性组合仍是仿射表达式，可以用 <code>{var: coef}</code> 字典表示。
+无需表达式树，无需递归求值——一个扁平字典就够了。</p>
+<p><strong>推论</strong>：<code>LpAffineExpression</code> 的所有运算符返回 <code>LpAffineExpression</code>，
+不会产生其他类型（除了比较运算符返回 <code>LpConstraint</code>）。</p>
+<hr />
+<h2 id="_12">哈希与相等性<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="_13">问题<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>建模库必须重载 <code>__eq__</code> 以支持 <code>x == y</code> 构造等式约束。
+但这会覆盖默认的相等性判断，影响对象作为字典 key 的行为。</p>
+<h3 id="_14">解决方案<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">LpElement</span><span class="p">:</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>        <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="k">else</span> <span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>        <span class="k">return</span> <span class="n">LpConstraint</span><span class="p">(</span><span class="bp">self</span> <span class="o">-</span> <span class="n">other</span><span class="p">,</span> <span class="n">LpConstraintSense</span><span class="o">.</span><span class="n">EQ</span><span class="p">)</span>
+</span></code></pre></div>
+<ol>
+<li><code>__hash__</code> 基于 <code>name</code>（变量）或 <code>id</code>（表达式），保证可哈希</li>
+<li>字典查找时，Python 先用 <code>is</code>（指针相等）判断，再用 <code>__eq__</code></li>
+<li>同一变量对象作为 key 时 <code>is</code> 命中，不会误触发 <code>__eq__</code></li>
+<li>不同变量 <code>name</code> 不同 → <code>hash</code> 不同 → 不会触发 <code>__eq__</code></li>
+</ol>
+<p><strong>安全条件</strong>：不要创建同名变量。只要变量名唯一，字典行为安全。</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">x</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">y</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="p">(</span><span class="s2">"y"</span><span class="p">)</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>  <span class="c1"># 安全：x 和 y 是不同对象，hash 不同</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="n">d</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>  <span class="c1"># 返回 3：先 is 匹配，命中</span>
+</span></code></pre></div>
+<hr />
+<h2 id="lpsum">lpSum — 高效求和<a class="headerlink" href="#lpsum" title="Permanent link">&para;</a></h2>
+<h3 id="sum">问题：<code>sum()</code> 的性能瓶颈<a class="headerlink" href="#sum" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># sum([3*x, 2*y, 5]) 展开为：</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="c1"># ((3*x) + (2*y)) + 5</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1"># 每次调用 __add__，都创建一个新的 LpAffineExpression</span>
+</span></code></pre></div>
+<p>对 N 个表达式求和，<code>sum()</code> 需要 N-1 次构造，每次拷贝并合并字典。</p>
+<h3 id="lpsum_1"><code>lpSum</code> 优化<a class="headerlink" href="#lpsum_1" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">lpSum</span><span class="p">(</span><span class="n">vector</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LpAffineExpression</span><span class="p">:</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">vector</span><span class="p">:</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>        <span class="k">return</span> <span class="n">LpAffineExpression</span><span class="p">()</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    <span class="n">merged</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    <span class="n">const</span> <span class="o">=</span> <span class="mf">0.0</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">vector</span><span class="p">:</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>        <span class="k">if</span> <span class="n">_is_number</span><span class="p">(</span><span class="n">item</span><span class="p">):</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>            <span class="n">const</span> <span class="o">+=</span> <span class="n">item</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">LpAffineExpression</span><span class="p">):</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>            <span class="k">for</span> <span class="n">var</span><span class="p">,</span> <span class="n">coef</span> <span class="ow">in</span> <span class="n">item</span><span class="o">.</span><span class="n">terms</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>                <span class="n">new_coef</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span> <span class="o">+</span> <span class="n">coef</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>                <span class="k">if</span> <span class="n">new_coef</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>                    <span class="n">merged</span><span class="p">[</span><span class="n">var</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_coef</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>                <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>                    <span class="n">merged</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>            <span class="n">const</span> <span class="o">+=</span> <span class="n">item</span><span class="o">.</span><span class="n">const</span>
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>    <span class="k">return</span> <span class="n">LpAffineExpression</span><span class="p">(</span><span class="n">merged</span><span class="p">,</span> <span class="n">const</span><span class="p">)</span>
+</span></code></pre></div>
+<p>直接遍历所有表达式，一次性合并到同一个字典——只构造一次。</p>
+<h3 id="_15">复杂度对比<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>时间复杂度</th>
+<th>中间对象数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sum(vector)</code></td>
+<td><span class="arithmatex">\(O(N \cdot \bar{T})\)</span></td>
+<td><span class="arithmatex">\(N-1\)</span></td>
+</tr>
+<tr>
+<td><code>lpSum(vector)</code></td>
+<td><span class="arithmatex">\(O(\sum T_i)\)</span></td>
+<td><span class="arithmatex">\(1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>对 500 个变量的求和，<code>lpSum</code> 比 <code>sum</code> 快约 5-10x。</p>
+<hr />
+<h2 id="_16">批量变量创建<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="lpvariabledicts"><code>LpVariable.dicts</code> — 一维变量字典<a class="headerlink" href="#lpvariabledicts" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nd">@classmethod</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">dicts</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">indices</span><span class="p">,</span> <span class="n">lowBound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">upBound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpContinuous</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    <span class="k">return</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="bp">cls</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">lowBound</span><span class="p">,</span> <span class="n">upBound</span><span class="p">,</span> <span class="n">cat</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indices</span><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">x</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="o">.</span><span class="n">dicts</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="c1"># x[0].name == "x_0", x[1].name == "x_1", x[2].name == "x_2"</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="c1"># x[0].lowBound == 0</span>
+</span></code></pre></div>
+<p>索引可以是任意可哈希对象：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">routes</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="o">.</span><span class="n">dicts</span><span class="p">(</span><span class="s2">"route"</span><span class="p">,</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    <span class="p">[(</span><span class="s2">"北京"</span><span class="p">,</span> <span class="s2">"上海"</span><span class="p">),</span> <span class="p">(</span><span class="s2">"北京"</span><span class="p">,</span> <span class="s2">"广州"</span><span class="p">),</span> <span class="p">(</span><span class="s2">"上海"</span><span class="p">,</span> <span class="s2">"广州"</span><span class="p">)],</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># routes[("北京", "上海")] 是一个变量</span>
+</span></code></pre></div>
+<h3 id="lpvariablematrix"><code>LpVariable.matrix</code> — 二维变量矩阵<a class="headerlink" href="#lpvariablematrix" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nd">@classmethod</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">matrix</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="n">lowBound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">upBound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpContinuous</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="k">return</span> <span class="p">{</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>        <span class="n">r</span><span class="p">:</span> <span class="p">{</span><span class="n">c</span><span class="p">:</span> <span class="bp">cls</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">lowBound</span><span class="p">,</span> <span class="n">upBound</span><span class="p">,</span> <span class="n">cat</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">}</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rows</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>    <span class="p">}</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">x</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="c1"># x[0][0].name == "x_0_0"</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="c1"># x[1][2].name == "x_1_2"</span>
+</span></code></pre></div>
+<h3 id="_17">命名规则<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>变量名格式</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dicts</code></td>
+<td><code>{name}_{index}</code></td>
+<td><code>x_0</code>, <code>x_1</code></td>
+</tr>
+<tr>
+<td><code>matrix</code></td>
+<td><code>{name}_{row}_{col}</code></td>
+<td><code>x_0_0</code>, <code>x_1_2</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_18">完整示例<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">生产计划<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">minipulp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mp</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="n">x</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># 产品 A 产量</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="n">y</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="p">(</span><span class="s2">"y"</span><span class="p">,</span> <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># 产品 B 产量</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="n">prob</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpProblem</span><span class="p">(</span><span class="s2">"production"</span><span class="p">,</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpMaximize</span><span class="p">)</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="n">prob</span> <span class="o">+=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">y</span>          <span class="c1"># max 3x + 2y</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="n">prob</span> <span class="o">+=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">100</span>       <span class="c1"># 原料约束</span>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="n">prob</span> <span class="o">+=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">80</span>            <span class="c1"># 工时约束</span>
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="n">prob</span> <span class="o">+=</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">40</span>                <span class="c1"># 市场约束</span>
+</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>
+</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="n">prob</span><span class="o">.</span><span class="n">solve</span><span class="p">()</span>
+</span><span id="__span-31-13"><a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"x = </span><span class="si">{</span><span class="n">x</span><span class="o">.</span><span class="n">varValue</span><span class="si">}</span><span class="s2">, y = </span><span class="si">{</span><span class="n">y</span><span class="o">.</span><span class="n">varValue</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># x = 20, y = 60</span>
+</span><span id="__span-31-14"><a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"obj = </span><span class="si">{</span><span class="n">prob</span><span class="o">.</span><span class="n">objective</span><span class="o">.</span><span class="n">value</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>       <span class="c1"># obj = 180</span>
+</span></code></pre></div>
+<h3 id="dicts-lpsum">运输问题（使用 dicts + lpSum）<a class="headerlink" href="#dicts-lpsum" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">minipulp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mp</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="n">supply</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"f1"</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">"f2"</span><span class="p">:</span> <span class="mi">40</span><span class="p">}</span>      <span class="c1"># 工厂供应量</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="n">demand</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"c1"</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">"c2"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">"c3"</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>  <span class="c1"># 客户需求量</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="n">cost</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>    <span class="p">(</span><span class="s2">"f1"</span><span class="p">,</span> <span class="s2">"c1"</span><span class="p">):</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="s2">"f1"</span><span class="p">,</span> <span class="s2">"c2"</span><span class="p">):</span> <span class="mi">3</span><span class="p">,</span> <span class="p">(</span><span class="s2">"f1"</span><span class="p">,</span> <span class="s2">"c3"</span><span class="p">):</span> <span class="mi">4</span><span class="p">,</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>    <span class="p">(</span><span class="s2">"f2"</span><span class="p">,</span> <span class="s2">"c1"</span><span class="p">):</span> <span class="mi">3</span><span class="p">,</span> <span class="p">(</span><span class="s2">"f2"</span><span class="p">,</span> <span class="s2">"c2"</span><span class="p">):</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="s2">"f2"</span><span class="p">,</span> <span class="s2">"c3"</span><span class="p">):</span> <span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="p">}</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="c1"># x[i][j] = 从工厂 i 运到客户 j 的量</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="n">x</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpVariable</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="n">supply</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">demand</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>
+</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="n">prob</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpProblem</span><span class="p">(</span><span class="s2">"transport"</span><span class="p">,</span> <span class="n">mp</span><span class="o">.</span><span class="n">LpMinimize</span><span class="p">)</span>
+</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="n">prob</span> <span class="o">+=</span> <span class="n">mp</span><span class="o">.</span><span class="n">lpSum</span><span class="p">(</span><span class="n">cost</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)]</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">supply</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">demand</span><span class="p">)</span>
+</span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>
+</span><span id="__span-32-16"><a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">supply</span><span class="p">:</span>
+</span><span id="__span-32-17"><a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a>    <span class="n">prob</span> <span class="o">+=</span> <span class="n">mp</span><span class="o">.</span><span class="n">lpSum</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">demand</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">supply</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># 供应约束</span>
+</span><span id="__span-32-18"><a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a>
+</span><span id="__span-32-19"><a id="__codelineno-32-19" name="__codelineno-32-19" href="#__codelineno-32-19"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">demand</span><span class="p">:</span>
+</span><span id="__span-32-20"><a id="__codelineno-32-20" name="__codelineno-32-20" href="#__codelineno-32-20"></a>    <span class="n">prob</span> <span class="o">+=</span> <span class="n">mp</span><span class="o">.</span><span class="n">lpSum</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">supply</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">demand</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>  <span class="c1"># 需求约束</span>
+</span><span id="__span-32-21"><a id="__codelineno-32-21" name="__codelineno-32-21" href="#__codelineno-32-21"></a>
+</span><span id="__span-32-22"><a id="__codelineno-32-22" name="__codelineno-32-22" href="#__codelineno-32-22"></a><span class="n">prob</span><span class="o">.</span><span class="n">solve</span><span class="p">()</span>
+</span><span id="__span-32-23"><a id="__codelineno-32-23" name="__codelineno-32-23" href="#__codelineno-32-23"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"总成本: </span><span class="si">{</span><span class="n">prob</span><span class="o">.</span><span class="n">objective</span><span class="o">.</span><span class="n">value</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_20">测试<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </span>tests/test_elements.py<span class="w"> </span>-v
 </span></code></pre></div>
 <p>43 个测试覆盖：变量构造、标量乘法、加减除、复合表达式、约束构造、lpSum、value 求值。</p>
+<hr />
+<h2 id="_21">总结<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<p>Phase 1 实现了 minipulp 的代数核心：</p>
+<table>
+<thead>
+<tr>
+<th>类</th>
+<th>职责</th>
+<th>关键属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LpElement</code></td>
+<td>运算符协议</td>
+<td><code>__le__</code>, <code>__ge__</code>, <code>__eq__</code></td>
+</tr>
+<tr>
+<td><code>LpAffineExpression</code></td>
+<td>仿射表达式</td>
+<td><code>terms: dict</code>, <code>const: float</code></td>
+</tr>
+<tr>
+<td><code>LpVariable</code></td>
+<td>决策变量</td>
+<td><code>lowBound</code>, <code>upBound</code>, <code>cat</code>, <code>varValue</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心设计</strong>：</p>
+<ol>
+<li><strong>字典表示</strong>：<code>{var: coef}</code> 扁平字典，无需表达式树</li>
+<li><strong>闭包性</strong>：仿射表达式在加法、数乘下封闭</li>
+<li><strong>继承复用</strong>：运算符只在 <code>LpAffineExpression</code> 实现，<code>LpVariable</code> 自动继承</li>
+<li><strong>运算符重载</strong>：<code>3*x + 2*y</code> 直接构造表达式对象</li>
+</ol>
 
 
 
