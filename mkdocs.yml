@@ -1,0 +1,90 @@
+site_name: minipulp — 从零实现 PuLP
+site_description: 线性规划建模库的教学复刻，理解 PuLP 设计哲学与底层原理
+site_url: https://your-username.github.io/minipulp/
+repo_url: https://github.com/your-username/minipulp
+repo_name: your-username/minipulp
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: deep orange
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 首页: index.md
+  - 设计哲学:
+      - 四大设计原则: principles/philosophy.md
+      - 运算符重载机制: principles/operator-overloading.md
+      - 仿射表达式闭包性: principles/affine-closure.md
+      - LP 文件格式规范: principles/lp-format.md
+      - 单纯形法推导: principles/simplex.md
+  - 教程:
+      - Phase 1 - 表达式系统: tutorial/phase1-expressions.md
+      - Phase 2 - 约束与问题: tutorial/phase2-problem.md
+      - Phase 3 - C++ 单纯形法核心: tutorial/phase3-simplex-core.md
+      - Phase 4 - CBC/GLPK 对接: tutorial/phase4-solvers.md
+      - Phase 5 - 高级功能: tutorial/phase5-advanced.md
+  - API 参考:
+      - minipulp: api/minipulp.md
+  - 示例:
+      - examples.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: true
+            show_root_heading: true
+            heading_level: 2
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+  - footnotes
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/minipulp

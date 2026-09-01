@@ -1,0 +1,44 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# C++ build artifacts
+*.o
+*.obj
+*.so
+*.pyd
+*.dll
+*.exp
+*.lib
+CMakeFiles/
+cmake-build-*/
+core/_native*.pyd
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.codegraph/
+.codeartsdoer/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# MkDocs
+site/
