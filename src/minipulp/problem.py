@@ -167,8 +167,10 @@ class LpProblem:
 def _get_default_solver():
     """获取默认求解器。
 
-    优先级：SimplexCore（纯 Python，零依赖）。
-    Phase 4 后扩展为：CBC → GLPK → SimplexCore。
+    优先级：SimplexCpp（C++，快 10-50x）→ SimplexCore（纯 Python，零依赖）。
     """
-    from .solvers import SimplexCore
+    from .solvers import SimplexCpp, SimplexCore
+    cpp = SimplexCpp()
+    if cpp.available():
+        return cpp
     return SimplexCore()
