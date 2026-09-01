@@ -321,13 +321,77 @@ class LpVariable(LpAffineExpression):
     def __str__(self) -> str:
         return self.name
 
+    @classmethod
+    def dicts(
+        cls,
+        name: str,
+        indices,
+        lowBound: NumberLike | None = None,
+        upBound: NumberLike | None = None,
+        cat: LpCat = LpCat.CONTINUOUS,
+    ) -> dict:
+        """批量创建变量字典。
+
+        Parameters
+        ----------
+        name : str
+            变量名前缀，实际变量名为 ``f"{name}_{index}"``。
+        indices : iterable
+            索引集合，每个索引对应一个变量。
+        lowBound, upBound, cat : 同 LpVariable
+
+        Returns
+        -------
+        dict
+            ``{index: LpVariable}``。
+
+        Examples
+        --------
+        >>> x = LpVariable.dicts("x", range(3), lowBound=0)
+        >>> x[0].name
+        'x_0'
+        >>> x[1].lowBound
+        0
+        """
+        return {
+            i: cls(f"{name}_{i}", lowBound, upBound, cat) for i in indices
+        }
+
+    @classmethod
+    def matrix(
+        cls,
+        name: str,
+        rows,
+        cols,
+        lowBound: NumberLike | None = None,
+        upBound: NumberLike | None = None,
+        cat: LpCat = LpCat.CONTINUOUS,
+    ) -> dict:
+        """批量创建二维变量矩阵。
+
+        Returns
+        -------
+        dict
+            ``{row: {col: LpVariable}}``，变量名 ``f"{name}_{row}_{col}"``。
+
+        Examples
+        --------
+        >>> x = LpVariable.matrix("x", range(2), range(3), lowBound=0)
+        >>> x[0][1].name
+        'x_0_1'
+        """
+        return {
+            r: {c: cls(f"{name}_{r}_{c}", lowBound, upBound, cat) for c in cols}
+            for r in rows
+        }
+
 
 def lpSum(vector: list) -> LpAffineExpression:
-    """对一组仿射表达式求和，等价于 ``sum(vector)`` 但语义更明确。
+    """对一组仿射表达式求和，直接合并字典，避免反复构造中间对象。
 
-    PuLP 提供 ``lpSum`` 作为批量求和的推荐方式，避免在循环中
-    反复构造中间表达式对象。本教学版直接用 ``sum`` 亦可，
-    此函数主要为了 API 对齐。
+    对于大规模问题（如运输问题有数百变量），这比 ``sum(vector)``
+    快得多，因为后者每次 ``+`` 都创建一个新 ``LpAffineExpression``，
+    而本函数只构造一次。
 
     Examples
     --------
@@ -337,7 +401,17 @@ def lpSum(vector: list) -> LpAffineExpression:
     """
     if not vector:
         return LpAffineExpression()
-    result = LpAffineExpression()
+    merged: dict = {}
+    const = 0.0
     for item in vector:
-        result = result + item
-    return result
+        if _is_number(item):
+            const += item
+        elif isinstance(item, LpAffineExpression):
+            for var, coef in item.terms.items():
+                new_coef = merged.get(var, _ZERO) + coef
+                if new_coef != 0:
+                    merged[var] = new_coef
+                else:
+                    merged.pop(var, None)
+            const += item.const
+    return LpAffineExpression(merged, const)

@@ -170,6 +170,17 @@ class SimplexCore(LpSolver):
             if art_value > _EPS:
                 return LpStatus.INFEASIBLE, [0.0] * n
 
+            art_set = set(artificial_cols)
+            for i in range(m):
+                if basis[i] in art_set:
+                    for j in range(n_total):
+                        if j in art_set:
+                            continue
+                        if abs(A[i][j]) > _EPS:
+                            self._pivot(A, b, i, j, m, n_total)
+                            basis[i] = j
+                            break
+
             for j in artificial_cols:
                 for i in range(m):
                     A[i][j] = 0.0
