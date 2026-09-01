@@ -44,7 +44,7 @@ print(prob.status, prob.objective.value())  # Optimal 200.0
 
 ## 文档
 
-完整教程与原理讲解：[GitHub Pages 站点](https://your-username.github.io/minipulp/)
+完整教程与原理讲解：[GitHub Pages 站点](https://wanglh39.github.io/minipulp/)
 
 ## 项目结构
 

@@ -1,8 +1,8 @@
 site_name: minipulp — 从零实现 PuLP
 site_description: 线性规划建模库的教学复刻，理解 PuLP 设计哲学与底层原理
-site_url: https://your-username.github.io/minipulp/
-repo_url: https://github.com/your-username/minipulp
-repo_name: your-username/minipulp
+site_url: https://wanglh39.github.io/minipulp/
+repo_url: https://github.com/wanglh39/minipulp
+repo_name: wanglh39/minipulp
 edit_uri: edit/main/docs/
 
 docs_dir: docs
@@ -87,4 +87,4 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-username/minipulp
+      link: https://github.com/wanglh39/minipulp
